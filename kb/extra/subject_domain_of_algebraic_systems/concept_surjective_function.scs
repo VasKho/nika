@@ -1,0 +1,17 @@
+concept_surjective_function
+=> nrel_main_idtf:
+  [ сюръективная функция ] (* <- lang_ru;; *);
+  [ surjective function ] (* <- lang_en;; *);
+
+<- sc_node_class;
+<= nrel_inclusion: concept_total_function;
+
+=> definition:
+  [  <sc_element sys_idtf="concept_total_function">отображение</sc_element> <sc_element sys_idtf="set">множества</sc_element> X на <sc_element sys_idtf="set">множество</sc_element> Y, при котором каждый элемент <sc_element sys_idtf="set">множества</sc_element> Y является образом хотя бы одного элемента <sc_element sys_idtf="set">множества</sc_element> X ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="concept_total_function">total function</sc_element> that every element y from <sc_element sys_idtf="set">set</sc_element> Y can be mapped from some element x from <sc_element sys_idtf="set">set</sc_element> X ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

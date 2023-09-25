@@ -1,0 +1,24 @@
+concept_formal_language
+=> nrel_main_idtf:
+  [ формальный язык ] (* <- lang_ru;; *);
+  [ formal language ] (* <- lang_en;; *);
+
+<- sc_node_class;
+
+<= nrel_generate: concept_domain;
+
+=> definition:
+  [ <sc_element sys_idtf="concept_formal_language">формальный язык</sc_element> L является <sc_element sys_idtf="nrel_inclusion">подмножеством</sc_element> замыкания Клини <sc_element sys_idtf="concept_domain">алфавита</sc_element> A. ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="concept_formal_language">formal language</sc_element> L is a <sc_element sys_idtf="nrel_inclusion">subset</sc_element> of Kleene closure applied to an <sc_element sys_idtf="concept_domain">alphabet</sc_element> A ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;
+
+concept_formal_language -> concept_C_prog_lang (*
+  => nrel_main_idtf:
+    [ язык программирования Си ] (* <- lang_ru;; *);
+    [ C programming language ] (* <- lang_en;; *);;
+*);;

@@ -1,0 +1,25 @@
+nrel_define
+=> nrel_main_idtf:
+  [ определять* ] (* <- lang_ru;; *);
+  [ define* ] (* <- lang_en;; *);
+
+<- sc_node_norole_relation;
+
+<- relation;
+<- binary_relation;
+<- transitive_relation;
+<- asymmetric_relation;
+
+=> nrel_definitional_domain: ... (*
+  <= nrel_combination: ... (*
+    <- sc_node_tuple;;
+    -> set;;
+  *);;
+*);
+
+=> nrel_first_domain: set;
+=> nrel_second_domain: set;
+
+=> definition:
+  [ описывать смысл понятия ] (* <- lang_ru;; *);
+  [ to describe the meaning of a concept ] (* <- lang_en;; *);;

@@ -1,0 +1,21 @@
+concept_algebraic_structure
+=> nrel_main_idtf:
+  [ алгебраическая система ] (* <- lang_ru;; *);
+  [ algebraic structure ] (* <- lang_en;; *);
+
+<- sc_node_class;  
+<- 3 (* <- power_of_set;; *);
+
+-> rrel_1: concept_domain;
+-> rrel_2: relation;
+-> rrel_3: concept_operation;
+
+=> definition:
+  [ <sc_element sys_idtf="concept_algebraic_structure">алгебраическая система</sc_element> - <sc_element sys_idtf="concept_domain">носитель</sc_element> с заданной на нём <sc_element sys_idtf="concept_signature">сигнатурой</sc_element>. ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="concept_algebraic_structure">algebraic structure</sc_element> - <sc_element sys_idtf="concept_domain">domain</sc_element> with <sc_element sys_idtf="concept_signature">signature</sc_element> on it. ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

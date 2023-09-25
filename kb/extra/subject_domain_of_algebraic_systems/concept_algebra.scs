@@ -1,0 +1,35 @@
+concept_algebra
+=> nrel_main_idtf:
+  [ алгебра ] (* <- lang_ru;; *);
+  [ algebra ] (* <- lang_en;; *);
+
+<- sc_node_class;
+<= nrel_inclusion: concept_algebraic_structure;
+
+-> rrel_2: ... (* <- empty_set;; *);
+
+=> definition:
+  [ <sc_element sys_idtf="concept_algebraic_structure">алгебраическая система</sc_element> с пустым множеством отношений. ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="concept_algebraic_structure">algebraic structure</sc_element> with an empty set of relations. ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;
+
+concept_algebra -> Abel_group (*
+  => nrel_main_idtf:
+    [ Абелева группа ] (* <- lang_ru;; *);
+    [ Abels group ] (* <- lang_en;; *);;
+    <- sc_node_class;;
+    -> rrel_1: number;;
+    -> rrel_2: empty_set;;
+    -> rrel_3: ... (*
+      <- concept_operation;;
+      <- sc_node_norole_relation;;
+      <- binary_relation;;
+      <- symmetric_relation;;
+    *);;
+    => definition: [ группа, в которой групповая операция является коммутативной ] (* <- lang_ru;; *);;
+*);;

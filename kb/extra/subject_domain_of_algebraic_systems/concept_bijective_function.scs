@@ -1,0 +1,22 @@
+concept_bijective_function
+=> nrel_main_idtf:
+  [ биективная функция ] (* <- lang_ru;; *);
+  [ bijective function ] (* <- lang_en;; *);
+
+<- sc_node_class;
+
+<= nrel_intersection: ... (*
+  <- sc_node_tuple;;
+  -> concept_injective_function;;
+  -> concept_surjective_function;;
+*);
+
+=> definition:
+  [ <sc_element sys_idtf="concept_total_function">отображение</sc_element>, которое является одновременно и <sc_element sys_idtf="concept_surjective_function">сюръективным</sc_element>, и <sc_element sys_idtf="concept_injective_function">инъективным</sc_element> ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="concept_total_function">total function</sc_element> that is <sc_element sys_idtf="concept_surjective_function">surjective</sc_element> and <sc_element sys_idtf="concept_injective_function">injective</sc_element> ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

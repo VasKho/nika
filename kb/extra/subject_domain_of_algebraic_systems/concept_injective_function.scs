@@ -1,0 +1,16 @@
+concept_injective_function
+=> nrel_main_idtf:
+  [ инъективная функция ] (* <- lang_ru;; *);
+  [ injective function ] (* <- lang_en;; *);
+
+<- sc_node_class;
+
+=> definition:
+  [ любым двум различным элементам x, y из <sc_element sys_idtf="set">множества</sc_element> X сопоставляются так же различные элементы из <sc_element sys_idtf="set">множества</sc_element> Y ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ maps two any distinct elements x, y from <sc_element sys_idtf="set">set</sc_element> X to distinct elements from <sc_element sys_idtf="set">set</sc_element> Y ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

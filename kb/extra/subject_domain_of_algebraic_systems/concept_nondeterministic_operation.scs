@@ -1,0 +1,24 @@
+concept_nondeterministic_operation
+=> nrel_main_idtf:
+  [ недетерминированная операция ] (* <- lang_ru;; *);
+  [ nondeterministic operation ] (* <- lang_en;; *);
+
+=> nrel_idtf:
+  [ операция ввода ] (* <- lang_ru;; *);
+  [ input operation ] (* <- lang_en;; *);
+
+<- sc_node_class;
+
+=> definition:
+  [ <sc_element sys_idtf="concept_operation">операция</sc_element>, которая не является <sc_element sys_idtf="concept_function">функцией</sc_element> ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="concept_operation">operation</sc_element> that is not a <sc_element sys_idtf="concept_function">function</sc_element> ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;
+
+nrel_inclusion -|> (concept_nondeterministic_operation <= concept_function);;
+
+concept_nondeterministic_operation -> ifGr;;

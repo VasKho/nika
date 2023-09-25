@@ -1,0 +1,22 @@
+nrel_lang_completion
+=> nrel_main_idtf:
+  [ дополнение языка* ] (* <- lang_ru;; *);
+  [ language completion* ] (* <- lang_en;; *);
+
+<- sc_node_norole_relation;
+<- concept_operation;
+
+<- relation;
+<- unary_relation;
+
+=> nrel_definitional_domain: concept_formal_language;
+
+=> definition:
+  [ содержит все слова <sc_element sys_idtf="concept_domain">алфавита</sc_element>, которые не содержатся в L1 ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ contains all words from the <sc_element sys_idtf="concept_domain">alphabet</sc_element> that are not in L1 ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

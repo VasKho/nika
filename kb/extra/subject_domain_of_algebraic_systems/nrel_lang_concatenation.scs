@@ -1,0 +1,21 @@
+nrel_lang_concatenation
+=> nrel_main_idtf:
+  [ конкатенация языков* ] (* <- lang_ru;; *);
+  [ languages concatenation* ] (* <- lang_en;; *);
+
+<- sc_node_norole_relation;
+<- concept_operation;
+
+<- relation;
+
+=> nrel_definitional_domain: concept_formal_language;
+
+=> definition:
+  [ содержит все слова, удовлетворяющие форме vw, где v — это слово из L1, а w — слово из L2 ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ consists of all words vw such as v is a word from L1 and w is a word from L2 ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

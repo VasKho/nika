@@ -1,0 +1,29 @@
+concept_operation
+=> nrel_main_idtf:
+  [ операция ] (* <- lang_ru;; *);
+  [ operation ] (* <- lang_en;; *);
+
+<- sc_node_class;
+
+<= nrel_inclusion: relation;
+
+=> nrel_definitional_domain: concept_domain;
+
+=> nrel_inclusion:
+  arithmetic_operation;
+  concept_constant;
+
+=> nrel_subdividing: {
+  concept_deterministic_operation;
+  concept_nondeterministic_operation
+};
+
+=> definition:
+  [ <sc_element sys_idtf="set">множество</sc_element> <sc_element sys_idtf="pair_set">пар</sc_element> переходов, заданное на <sc_element sys_idtf="concept_domain">носителе</sc_element> ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="set">set</sc_element> of <sc_element sys_idtf="pair_set">pairs</sc_element> of transitions, defined over <sc_element sys_idtf="concept_domain">domain</sc_element> ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

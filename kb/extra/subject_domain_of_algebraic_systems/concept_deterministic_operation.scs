@@ -1,0 +1,19 @@
+concept_deterministic_operation
+=> nrel_main_idtf:
+  [ детерминированная операция ] (* <- lang_ru;; *);
+  [ deterministic operation ] (* <- lang_en;; *);
+
+<- sc_node_class;
+<= nrel_inclusion: concept_function;
+
+=> definition:
+  [ <sc_element sys_idtf="concept_operation">операция</sc_element>, которая является <sc_element sys_idtf="concept_function">функцией</sc_element> ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="concept_operation">operation</sc_element> that is a <sc_element sys_idtf="concept_function">function</sc_element> ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;
+
+concept_deterministic_operation -> nrel_lang_concatenation;;

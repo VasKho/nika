@@ -1,0 +1,16 @@
+concept_fol
+=> nrel_main_idtf:
+  [ логика первого порядка ] (* <- lang_ru;; *);
+  [ first-order logic ] (* <- lang_en;; *);
+
+<- concept_information_processing_model;
+
+=> definition:
+  [ <sc_element sys_idtf="concept_information_processing_model">формальное исчисление</sc_element>, допускающее высказывания относительно переменных, фиксированных <sc_element sys_idtf="concept_operation">операций</sc_element> и предикатов ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="concept_information_processing_model">formal system</sc_element> allows the use of sentences that contain variables, determined <sc_element sys_idtf="concept_operation">operations</sc_element> and predicates ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

@@ -1,0 +1,24 @@
+section_subject_domain_of_algebraic_structures
+=> nrel_main_idtf:
+  [ Раздел. Предметная область алгебраических систем ] (* <- lang_ru;; *);
+  [ Section. Subject domain of algebraic structures ] (* <- lang_en;; *);
+<- sc_node_class;
+<- non_atomic_section;
+-> rrel_key_sc_element: subject_domain_of_algebraic_structures;;
+
+section_subject_domain_of_algebraic_structures = [*
+  subject_domain_of_algebraic_structures
+  <- structure;
+  <- subject_domain;
+  => nrel_main_idtf:
+    [ Предметная область алгебраических систем ] (* <- lang_ru;; *);
+    [ Subject domain of algebraic systems ] (* <- lang_en;; *);
+
+  -> rrel_maximum_studied_object_class: concept_algebraic_structure;
+  
+  -> rrel_not_maximum_studied_object_class:
+    concept_algebra;
+    concept_model;
+
+  => nrel_private_subject_domain: section_subject_domain_of_models;;
+*];;

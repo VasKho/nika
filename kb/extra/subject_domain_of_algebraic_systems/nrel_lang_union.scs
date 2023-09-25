@@ -1,0 +1,21 @@
+nrel_lang_union
+=> nrel_main_idtf:
+  [ объединение языков* ] (* <- lang_ru;; *);
+  [ languages union* ] (* <- lang_en;; *);
+
+<- sc_node_norole_relation;
+<- concept_operation;
+
+<- relation;
+
+=> nrel_definitional_domain: concept_formal_language;
+
+=> definition:
+  [ содержит все слова, содержащиеся в L1 или в L2 ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ consists of all words from languages L1 and L2 ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

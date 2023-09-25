@@ -1,0 +1,22 @@
+nrel_lang_kleene_star
+=> nrel_main_idtf:
+  [ замыкание Клини* ] (* <- lang_ru;; *);
+  [ Kleene star* ] (* <- lang_en;; *);
+
+<- sc_node_norole_relation;
+<- concept_operation;
+
+<- relation;
+<- unary_relation;
+
+=> nrel_definitional_domain: concept_formal_language;
+
+=> definition:
+  [ <sc_element sys_idtf="concept_formal_language">язык</sc_element> содержит все слова, которые содержится в L1, в т.ч. пустое слово ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ the <sc_element sys_idtf="concept_formal_language">language</sc_element> consisting of all words that are concatenations of zero or more words in the original language ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

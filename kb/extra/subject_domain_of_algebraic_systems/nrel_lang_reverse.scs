@@ -1,0 +1,22 @@
+nrel_lang_reverse
+=> nrel_main_idtf:
+  [ обращение языка* ] (* <- lang_ru;; *);
+  [ language reversal* ] (* <- lang_en;; *);
+
+<- sc_node_norole_relation;
+<- concept_operation;
+
+<- relation;
+<- unary_relation;
+
+=> nrel_definitional_domain: concept_formal_language;
+
+=> definition:
+  [ содержит обращённые слова из L1 ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ contains reversed words from L1 ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

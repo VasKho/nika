@@ -1,0 +1,17 @@
+concept_model
+=> nrel_main_idtf: [ модель ] (* <- lang_ru;; *);
+
+<- sc_node_class;
+<= nrel_inclusion: concept_algebraic_structure;
+
+-> rrel_3: ... (* <- enpty_set;; *);
+
+=> definition:
+  [ <sc_element sys_idtf="concept_algebraic_structure">алгебраическая система</sc_element> с пустым множеством операций. ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="concept_algebraic_structure">algebraic structure</sc_element> with an empty set of operations. ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

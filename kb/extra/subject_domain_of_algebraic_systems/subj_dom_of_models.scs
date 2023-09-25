@@ -1,0 +1,22 @@
+section_subject_domain_of_models
+=> nrel_main_idtf:
+  [ Раздел. Предметная область моделей ] (* <- lang_ru;; *);
+  [ Section. Subject domain of models ] (* <- lang_en;; *);
+<- sc_node_class;
+<- atomic_section;
+-> rrel_key_sc_element: subject_domain_of_models;;
+
+section_subject_domain_of_models = [*
+  subject_domain_of_models
+  <- structure;
+  <- subject_domain;
+  => nrel_main_idtf:
+    [ Предметная область моделей ] (* <- lang_ru;; *);
+    [ Subject domain of models ] (* <- lang_en;; *);
+
+  -> rrel_maximum_studied_object_class: concept_model;
+  
+  -> rrel_not_maximum_studied_object_class:
+    concept_information_processing_model;
+    concept_formal_language;;
+*];;

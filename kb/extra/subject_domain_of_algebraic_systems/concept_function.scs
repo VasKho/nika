@@ -1,0 +1,36 @@
+concept_function
+=> nrel_main_idtf:
+  [ функция ] (* <- lang_ru;; *);
+  [ function ] (* <- lang_en;; *);
+
+<- sc_node_class;
+
+<= nrel_inclusion: nrel_mapping;
+
+=> nrel_inclusion:
+   concept_total_function;
+   concept_injective_function;
+   concept_surjection_function;
+   concept_bijective_function;
+
+=> definition:
+  [ <sc_element sys_idtf="nrel_mapping">соответствие</sc_element> между двумя <sc_element sys_idtf="set">множествами</sc_element>, одному элементу первого <sc_element sys_idtf="set">множества</sc_element> соответствует единственный элемент другого <sc_element sys_idtf="set">множества</sc_element> ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+
+  [ <sc_element sys_idtf="nrel_mapping">mapping</sc_element> from a <sc_element sys_idtf="set">set</sc_element> X to a <sc_element sys_idtf="set">set</sc_element> Y that assigns to an element of X exactly one element of Y ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;
+
+concept_function -> ... (*
+  => nrel_idtf: [ y=x^2 ] (*
+    <- lang_ru;;
+    <- lang_en;;
+  *);;
+  <- concept_total_function;;
+  <- concept_injective_function;;
+  <- concept_surjective_function;;
+  <- concept_bijective_function;;
+*);;

@@ -1,0 +1,30 @@
+concept_domain
+=> nrel_main_idtf:
+  [ носитель ] (* <- lang_ru;; *);
+  [ domain ] (* <- lang_en;; *);
+
+=> nrel_idtf:
+  [ алфавит ] (* <- lang_ru;; *);
+  [ alphabet ] (* <- lang_en;; *);
+  [ underlying set ] (* <- lang_en;; *);
+  [ carrier set ] (* <- lang_en;; *);
+  
+<- sc_node_class;
+
+=> definition:
+  [ <sc_element sys_idtf="set">множество</sc_element> символов. ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="set">set</sc_element> of symbols. ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;
+
+concept_domain -> binary_alphabet (*
+  => nrel_main_idtf:
+    [ двоичный алфавит ] (* <- lang_ru;; *);
+    [ binary alphabet ] (* <- lang_en;; *);;
+  -> [ 0 ];;
+  -> [ 1 ];;
+*);;

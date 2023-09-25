@@ -1,0 +1,26 @@
+concept_propositional_logic
+=> nrel_main:idtf:
+  [ логика высказываний ] (* <- lang_ru;; *);
+  [ propositional logic ] (* <- lang_en;; *);
+
+=> nrel_idtf:
+  [ пропозициональная логика ] (* <- lang_ru;; *);
+  [ исчисление высказываний ] (* <- lang_ru;; *);
+  [ логика нулевого порядка ] (* <-lang_ru;; *);
+  [ propositional calculus ] (* <- lang_en;; *);
+  [ statement logic ] (* <- lang_en;; *);
+  [ sentential calculus ] (* <- lang_en;; *);
+  [ sentential logic ] (* <- lang_en;; *);
+  [ zeroth-order logic ] (* <- lang_en;; *);
+
+<- concept_model;
+
+=> definition:
+  [ это раздел логики, изучающий сложные высказывания, образованные из простых, и их взаимоотношения ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ branch of logic that deals with propositions (which can be true or false) and relations between propositions, including the construction of arguments based on them ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+*);;

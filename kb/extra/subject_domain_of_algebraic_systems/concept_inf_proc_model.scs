@@ -1,0 +1,29 @@
+concept_information_processing_model
+=> nrel_main_idtf:
+  [ формальная модель обработки информации ] (* <- lang_ru;; *);
+  [ formal information processing model ] (* <- lang_en;; *);
+
+=> nrel_idtf: 
+  [ модель обработки информации ] (* <- lang_ru;; *);
+  [ формальная система ] (* <- lang_ru;; *);
+  [ формальное исчисление ] (* <- lang_ru;; *);
+  [ формальная теория ] (* <- lang_ru;; *);
+
+  [ information processing model ] (* <- lanfg_en;; *);
+  [ formal system ] (* <- lang_en;; *);
+  [ axiomatic system ] (* <- lang_en;; *);
+  [ formal theory ] (* <- lang_en;; *);
+
+<- sc_node_class;
+
+<= nrel_inclusion: concept_algebraic_structure;
+
+=> definition:
+  [ задаётся четвёркой <A, S, B, W>, где A - <sc_element sys_idtf="concept_domain">алфавит</sc_element>, S - синтаксис (грамматика), B - множество начальных состояний, W - множество <sc_element sys_idtf="concept_operation">операций</sc_element>. ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ is a four <A, S, B, W>, where A - <sc_element sys_idtf="concept_domain">alphabet</sc_element>, S - syntax (grammar), B - set of initial states, W - set of <sc_element sys_idtf="concept_operation">operations</sc_element>. ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;

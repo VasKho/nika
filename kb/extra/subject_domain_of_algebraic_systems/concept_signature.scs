@@ -1,0 +1,29 @@
+concept_signature
+=> nrel_main_idtf:
+  [ сигнатура ] (* <- lang_ru;; *);
+  [ signature ] (* <- lang_en;; *);
+  
+<- sc_node_class;
+
+<= nrel_define: ... (*
+  <- sc_node_tuple;;
+  -> concept_operation;;
+  -> relation;;
+*);
+
+=> definition:
+  [ <sc_element sys_idtf="concept_signature">сигнатура</sc_element> перечисляет и описывает символы и <sc_element sys_idtf="concept_operation">операции</sc_element>, характеризующие <sc_element sys_idtf="concept_algebraic_structure">алгебраическую систему</sc_element> ] (*
+    <- lang_ru;;
+    => nrel_format: format_html;;
+  *);
+  [ <sc_element sys_idtf="concept_signature">signature</sc_element> lists and describes the symbols and the <sc_element sys_idtf="concept_operation">operations</sc_element> that characterize an <sc_element sys_idtf="concept_algebraic_structure">algebraic structure</sc_element> ] (*
+    <- lang_en;;
+    => nrel_format: format_html;;
+  *);;
+
+concept_signature -> ... (*
+  -> [ 0 ];;
+  -> [ 1 ];;
+  -> nrel_conjunction;;
+  -> nrel_disjunction;;
+*);;
